@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hajj</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <title>Hajj Deputation</title>
     <link href="assets/css/bootstrap.min.css" rel="stylesheet"  crossorigin="anonymous">
     <link href="assets/css/custom.css" rel="stylesheet"  crossorigin="anonymous">
   </head>
@@ -57,7 +58,10 @@
                   <li><a class="dropdown-item" href="#">Guidelines for filling the form (SOP) </a></li>                  
                 </ul>
               </li>
-              <li class="nav-item dropdown">
+              <li class="nav-item">
+                <a class="nav-link" href="circulars.html">Circulars</a>
+              </li>
+              <!-- <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Circulars		
                 </a>
@@ -65,7 +69,7 @@
                   <li><a class="dropdown-item" href="#">Admin-2024 </a></li>
                   <li><a class="dropdown-item" href="#">Admin-2023</a></li>                  
                 </ul>
-              </li>
+              </li> -->
               <li class="nav-item">
                 <a href="faq.html" class="nav-link">FAQs</a>
               </li>
@@ -107,23 +111,19 @@
               <fieldset class="the-fieldset">
                 <legend class="the-legand">Registration Form</legend>
               
-            <div class="row">
-
-             
-
-              
+            <div class="row">               
 
                 <div class="col-lg-3">
                   <div class="mb-3">
                     <label for="Applicant Name" class="form-label">Applicant Name</label>
-                    <input type="text" class="form-control" placeholder="Applicant Name">                    
+                    <input type="text" class="form-control" >                    
                   </div>
                 </div>
 
                 <div class="col-lg-3">
                   <div class="mb-3">
                     <label for="Date of Birth" class="form-label">Date of Birth</label>
-                    <input type="text" class="form-control" placeholder="Date of Birth">                    
+                    <input type="text" class="form-control" >                    
                   </div>
                 </div>
 
@@ -141,21 +141,24 @@
                 <div class="col-lg-3">
                   <div class="mb-3">
                     <label for="Father's Name" class="form-label">Father's Name</label>
-                    <input type="text" class="form-control" placeholder="Father's Name">                    
+                    <input type="text" class="form-control">                    
                   </div>
                 </div>
+
+                </div>
+                <div class="row">
 
                 <div class="col-lg-3">
                   <div class="mb-3">
                     <label for="Category" class="form-label">Category</label>
-                    <input type="text" class="form-control" placeholder="Category">                    
+                    <input type="text" class="form-control" >                    
                   </div>
                 </div>
 
                 <div class="col-lg-3">
                   <div class="mb-3">
                     <label for="Mobile No" class="form-label">Mobile No.</label>
-                    <input type="text" class="form-control" placeholder="Mobile No">                    
+                    <input type="text" class="form-control">                    
                   </div>
                 </div>
 
@@ -169,13 +172,12 @@
                 <div class="col-lg-3">
                   <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Office Address</label>
-                    <select class="form-select" aria-label="Default select example">
-                      <option selected>Open this select menu</option>
-                      <option value="1">1</option>
-                      <option value="2">2</option>                      
-                    </select>                     
+                    <input type="text" class="form-control" placeholder="">                  
                   </div>
                 </div>
+
+              </div>
+              <div class="row">
 
                 <div class="col-lg-3">
                   <div class="mb-3">
@@ -198,35 +200,39 @@
                 <div class="col-lg-3">
                   <div class="mb-3">
                     <label for="Are you Working in Government" class="form-label">Are you Working in Government ?</label>
-                    <input type="text" class="form-control" placeholder="Are you Working in Government ?">                    
+                    <select class="form-select" aria-label="Default select example">
+                      
+                      <option value="1">Yes</option>
+                      <option value="2">No</option>                      
+                    </select>                      
                   </div>
                 </div>
 
                 <div class="col-lg-3">
                   <div class="mb-3">
                     <label for="Nature Of Employment" class="form-label">Nature Of Employment</label>
-                    <input type="text" class="form-control" placeholder="Nature Of Employment">                    
+                    <input type="text" class="form-control" placeholder="">                    
                   </div>
                 </div>
+
+              </div>
+
+
+              <div class="row">
 
                 <div class="col-lg-3">
                   <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Are you Muslim?</label>
-                    <input type="text" class="form-control" placeholder="">                    
+                    <select class="form-select" aria-label="Default select example">                      
+                      <option value="1">Yes</option>
+                      <option value="2">No</option>                      
+                    </select>                     
                   </div>
-                </div>
+                </div>  
 
-                <div class="col-lg-3">
+                <div class="col-lg-6">
                   <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Which agency you belong to</label>
-                    <input type="text" class="form-control" placeholder="">                    
-                  </div>
-                </div>
-                                                               
-
-                <div class="col-lg-3">
-                  <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Do you belong to CAPF/IPS/STATE POLICE/CENTRAL CIVIL SERVICES</label>
+                    <label for="exampleInputEmail1" class="form-label">Do you belong to CAPF/IPS/State Police/Central Civil Services</label>
                     <select class="form-select" aria-label="Default select example">
                       <option selected>Open this select menu</option>
                       <option value="1">Yes</option>
@@ -235,10 +241,136 @@
                   </div>
                 </div>
 
-
-              
+                <div class="col-lg-3">
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Which agency you belong to</label>
+                    <input type="text" class="form-control" placeholder="">                    
+                  </div>
+                </div>     
+                
+                
               
             </div>
+
+            <div class="row">
+              <div class="col-lg-3">
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Captcha </label>
+                  <input type="text" class="form-control" placeholder="">                   
+                </div>
+              </div> 
+
+              <div class="col-lg-3">
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Enter Captcha Code</label>
+                  <input type="text" class="form-control" placeholder="">                   
+                </div>
+              </div> 
+
+              <div class="col-lg-3">
+                <div class="mb-3">
+                  <label class="form-label"></label>
+                  <button type="button" class="btn btn-sm btn-info" style="margin-top: 31px;">Refresh</button>                   
+                </div>
+              </div> 
+
+            </div>
+            <div class="row">
+              <div class="col-lg-12">
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">I agree to these <a href="#terms" data-bs-toggle="modal" data-bs-target="#terms">Terms and Conditions  </a> </label>
+              </div>
+            </div>
+            </div>
+
+            <div class="clearfix"></div>
+                <div class="w-100 text-center py-1">
+                  <button type="button" class="btn btn-success">Submit Form</button>
+                </div>
+
+
+            
+          </div>
+
+            <!-- <div class="col-sm-12">
+              <div class="table-responsive">
+                <table class="table align-middle applicationField">
+                    <tr>
+                      <td><label>Applicant Name</label></td>
+                      <td><input type="text" class="form-control"></td>
+                    </tr>
+
+                    <tr>
+                      <td><label>Date of Birth</label></td>
+                      <td><input type="text" class="form-control"></td>
+                    </tr>
+
+                    <tr>
+                      <td><label>Gender</label></td>
+                      <td>
+                        <select class="form-select" aria-label="Default select example">
+                          <option selected="">Open this select menu</option>
+                          <option value="1">Male</option>
+                          <option value="2">Female</option>                      
+                        </select>
+                      </td>
+                    </tr>
+
+
+                    <tr>
+                      <td><label>Father's Name</label></td>
+                      <td><input type="text" class="form-control"></td>
+                    </tr>
+
+                    <tr>
+                      <td><label>Category</label></td>
+                      <td>
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected="">Open this select menu</option>
+                        <option value="1">Male</option>
+                        <option value="2">Female</option>                      
+                      </select>
+                    </td>
+                    </tr>
+
+                    <tr>
+                      <td><label>Mobile No.</label></td>
+                      <td><input type="text" class="form-control"></td>
+                    </tr>
+
+                    <tr>
+                      <td><label></label></td>
+                      <td></td>
+                    </tr>
+
+                    <tr>
+                      <td><label></label></td>
+                      <td></td>
+                    </tr>
+
+                    <tr>
+                      <td><label></label></td>
+                      <td></td>
+                    </tr>
+
+                    <tr>
+                      <td><label></label></td>
+                      <td></td>
+                    </tr>
+
+                    <tr>
+                      <td><label></label></td>
+                      <td></td>
+                    </tr>
+
+                    <tr>
+                      <td><label>Which agency you belong to</label></td>
+                      <td><input type="text" class="form-control" placeholder="">   </td>
+                    </tr>
+                </table>
+              </div>
+            </div> -->
           </fieldset>
           </form>
           </div>
@@ -287,6 +419,40 @@ Designed and Developed by: <a href="https://www.nic.in/" target="_blank">  Natio
         </article>
 
     </footer>
+
+
+    <div class="modal fade" id="terms" tabindex="-1" aria-labelledby="termsLabel" data-bs-backdrop="static" data-bs-keyboard="false" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="termsLabel">Terms and Conditions</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body bg-safran">
+            <div class="privacyDiv">
+              <div class="subHeading">Please read all Terms and Conditions carefully :</div>
+              <ul class="listStyle">
+                  <li>Only Muslim Officers from All India Services <span class="text-green">( IPS & IFoS)</span> & Central Civil Services <span class="text-green">(for the post of Coordinators)</span>and employees of Central Armed Police Forces <span class="text-green">(CAPFs)</span> & State Police <span class="text-green">(for the posts of AHOs & HAs)</span> are eligible to apply.</li>
+                  <li>The applicant is required to go through the Ministry O.M. No. 16/10/2023 dated 10.11.2023 on the website www.haj.nic.in/deputatation carefully before filling the application form and ensure that the applicant fulfils all the eligibility criteria mentioned therein.</li>
+                  <li>Any information suppressed or falsely given at any stage of the deputation process will render the applicant liable to disciplinary action under the relevant provisions of CCS<span class="text-green"></span>(CCA) Conduct Rules besides rejection of his/her application.</li>
+                  <li>Unsigned or Incomplete application is liable to be rejected without any communication.</li>
+                  <li>Attention of applicants is also invited towards clause 20 of the CCS<span class="text-green">(Conduct Rules)</span>, 1964 which say 'No Government servant shall bring or attempt to bring any political or other outside influence to bear upon any superior authority to further his/her interests in respect of matters pertaining to his/her service under Government. </li>
+                  <li>Please verify the details before final submission of the application. Once finally submitted, no further changes can be made to the application.</li>
+                  <li>Hard copy of the applications received after due date are liable to be rejected.</li>
+                  <li>Candidate needs to affix only one photograph on the hard copy of the application on the space provided on the top right corner of application. No additional photographs are required to be enclosed with the hard copy of the application.</li>
+                  <li>The following documents must be enclosed with the hard copy of online application:- Certificate to be furnished by Cadre Controlling Authority/ Relieving Authority, Medical fitness certificate, Date of Birth proof, Latest Salary Slip, Certificates/proof of Educational Qualifications, Forwarding letter <span class="text-green">(to be enclosed by the concerned department/ forwarding authority)</span> address and send to as per address mentioned in the said OM dated 10.11.2023.</li>
+                  <li>If any selected Female Deputationist is found pregnant at the time of departure to Jeddah for Haj duties, she would not be allowed to proceed for Haj Deputation.</li>
+                  
+              </ul>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+          </div>
+        </div>
+      </div>
+    </div>
 
     
     <script src="assets/js/jquery.min.js"></script>

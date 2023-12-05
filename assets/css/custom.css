@@ -380,6 +380,7 @@ main{
     padding: 45px 45px;
     margin: 45px 0;
     border:solid #f1f1f1 1px;
+    border:solid var(--green) 1px;
   }
   .login .form-control{
     border-radius: 2px;
@@ -444,17 +445,20 @@ main{
     font-size: 0.875rem;
   }
   .registrationForm label{
-    color:#555;
+    color:#101010;
     margin-bottom: 5px;
-    font-size: 0.875rem;    
+    font-size: 0.75rem;    
     letter-spacing: 0.5px;
+    font-weight: 500;
   }
   .the-fieldset{
       width: 100%;
-      border: solid var(--lightcream) 1px;
+      border: solid var(--green) 1px;
       border-radius: 4px;
       padding: 0px 25px 15px;
       margin-top: 20px;
+      background: var(--white);
+      box-shadow: 5px 5px 15px rgba(0,0,0,0.05);
   }
 
   .the-legand{
@@ -469,8 +473,136 @@ main{
       font-size: 1.09rem;
       font-weight: 600;
       background: var(--lightcream);
+      border: solid 1px var(--green);
+  }
+
+  .applicationField label{
+    text-align:right;
+    float: right;
+    font-weight: 500;
+    color: #101010;
+  }
+  .applicationField input,.applicationField select{
+    text-align:left;
+    max-width: 300px;
+    
+  }
+
+  /* .curculars tr:first-child td{
+    background: red!important;
+  } */
+
+  .curculars tr td:first-of-type, .curculars tr th:first-of-type{
+    background: #CEF3CE;
+  }
+  .curculars tr td:nth-child(2), .curculars tr th:nth-child(2){
+    background: #f7f7f7;
+  }
+  .curculars tr td:nth-child(3), .curculars tr th:nth-child(3){
+    background: var(--lightcream);
+  }
+  .curculars th, .curculars td {
+    border: 1px solid var(--green);    
   }
  /* Login Page */
+
+ .bg-safran{
+  background: #f7e6d6;
+ }
+ .privacyDiv {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 15px 15px 5px;
+  margin: 0px 0 5px;
+  border-radius: 4px;
+  background: #f7e6d6;
+}
+.privacyDiv .subHeading {
+  font-size: 1.25em;
+  padding: 10px 0;
+  font-weight: 600;
+  color: var(--textcolorlightBlack);
+  position: relative;
+  line-height: 1;
+  margin: 0 0 15px 0;
+}
+.privacyDiv .subHeading::after {
+  position: absolute;
+  content: '';
+  top: 100%;
+  width: 50px;
+  height: 3px;
+  background: var(--green);
+  left: 0;
+}
+
+ul.listStyle {
+  padding: 10px 5px;
+  margin: 0;
+  list-style: none;
+  border-radius: 4px;
+}
+.text-green{
+  color: var(--green);
+  font-weight: 600; 
+}
+
+ul.listStyle li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 15px;
+  font-size: 0.875rem;
+}
+
+ul.listStyle li::after {
+  position: absolute;
+  content: '\00bb';
+  font-size: 1.7rem;
+  font-weight: 400;
+  color: var(--green);
+  left: 0;
+  top: -9px;
+  letter-spacing: -4px;
+}
+
+/* contact us */
+
+.contact_inner{
+  background-color: #fff;
+  position: relative;
+  box-shadow: 20px 22px 44px #cccc;
+  border-radius: 25px;
+  min-height: 450px;
+  overflow: hidden;
+  border-right: solid 3px var(--green);
+  border-left: solid 3px var(--green);
+}
+
+.contact_info_sec {
+  position: absolute;
+  background-color: #2d2d2d;
+  color: #f1f1f1;
+  right: 0px;
+  top: 18%;
+  height: 250px;
+  width: 320px;
+  padding: 40px 20px;
+  border-radius: 25px 0 0 25px;
+  background-color: rgba(2, 39, 89,0.8);
+  background-color: rgb(0 145 29 / 86%);
+  
+}
+.address {
+  line-height: 1.5;
+}
+.address a{
+  color: var(--white);
+  font-weight: 300;
+}
+.bg-gray{
+  background-color: #f1f1f1;
+}
+/* contact us */
 
 
 
