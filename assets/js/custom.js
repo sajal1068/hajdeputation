@@ -55,4 +55,29 @@
             setTimeout(function(){
               self.className = 'showrocket';
             },800)
-          });          
+          }); 
+          
+          
+     
+
+          $('.arrows').click(function () {
+                $(".contact_info_sec").toggleClass("moveclass", 1000);  
+          });
+
+      //   $( ".arrows" ).click(function() {     
+      //     if($('.address:visible').length)
+      //         $('.address').hide("slide", { direction: "right" }, 1000);
+
+      //     else
+      //         $('.address').show("slide", { direction: "right" }, 1000);        
+      // })
+      
+          
+// $(document).ready(function(){
+//   $(".arrows").click(function(){
+//     $(".address").animate({
+//       width: "toggle"
+//     });
+//   });
+// });
+          
