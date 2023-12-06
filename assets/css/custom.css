@@ -235,12 +235,12 @@ main{
           order: 3;
         }
         .projectNmae {
-          font-size: 150%;
+          font-size: 141%;
           display: block;
-          margin-bottom: 10px;          
+          margin-bottom: 13px;          
         }
         ul.logosection li img {
-          max-height: 70px;
+          max-height: 65px;
           height: 100%;
         }
 
@@ -251,7 +251,31 @@ main{
         }
         ul.InfoMessage li{
           width: 100%;
+        }  
+        .pagetitle {
+          height: 35px;
+          padding: 5px 0px; 
+        }  
+        ul.pageName li {
+          padding: 5px 20px;        
+          position: relative;
+          font-size: .99rem;          
+        } 
+        
+        .contact_info_sec {
+           
+          top: 26%!important;
+          height: 225px!important;
+          width: 265px!important;
+          padding: 20px 20px!important;;         
+        }        
+        .contact_info_sec .h4{
+          font-size: 1.01rem;
         }
+        .contact_info_sec .h6{
+          font-size: 0.9rem;
+        }
+        
   }
 
 
@@ -284,6 +308,28 @@ main{
     ul.InfoMessage li{
       width: 100%;
     }
+    .pagetitle {
+      height: 35px;
+      padding: 5px 0px; 
+    }  
+    ul.pageName li {
+      padding: 5px 20px;        
+      position: relative;
+      font-size: .99rem;          
+    }
+    .contact_info_sec {
+           
+      top: 26%!important;
+      height: 225px!important;
+      width: 265px!important;
+      padding: 20px 20px!important;;         
+    }        
+    .contact_info_sec .h4{
+      font-size: 1.01rem;
+    }
+    .contact_info_sec .h6{
+      font-size: 0.9rem;
+    }  
  }
 
 
@@ -776,7 +822,7 @@ ul.InfoMessage li li span.titleValue{
 
 .heading{
   position: relative; 
-  padding-bottom: 15px;
+  padding-bottom: 10px;
   font-weight: 600;
   color: #132709;
 
@@ -802,9 +848,8 @@ ul.InfoMessage li li span.titleValue{
 }
 
 .banner {
-  /* background: #FBE5DA; */
-
-  padding-bottom: 44px;
+  /* background: #FBE5DA; */  
+  padding-bottom: 30px;
 }
 .carousel-indicators [data-bs-target]{
   
@@ -833,7 +878,7 @@ ul.InfoMessage li li span.titleValue{
 .carousel-indicators {
   position: absolute;
   right: 0;
-  bottom: -55px;
+  bottom: -47px;
   left: 0;
   z-index: 2;
   display: flex;
@@ -980,7 +1025,7 @@ ul.loginForm li:nth-child(1){
 	width: 28px;
 	height: 28px;
 	border-radius: 50%;
-	border: solid #FFAE00 1px;
+	border: solid var(--deepsafran) 1px;
 	top: -13px;
 	left: -6px;
   }
@@ -991,7 +1036,7 @@ ul.loginForm li:nth-child(1){
 	left: 50%;
 	width: 16px;
 	height: 2px;
-	background-color: #FFAE00;
+	background-color: var(--deepsafran);
 	transition: 0.3s;
   }
   .accordionIcon .line-02 {
@@ -1009,17 +1054,26 @@ ul.loginForm li:nth-child(1){
   
   .accordion {
 	margin-top: -1px;
-	border-top: 1px solid #FFAE00;
-	border-bottom: 1px solid #FFAE00;
+	border-top: 1px solid var(--deepsafran);
+	border-bottom: 1px solid var(--deepsafran);
+  counter-increment: counter 1;
   }
   .accordionTitle {
-	  padding: 20px 16px;
+	  padding: 20px 25px;
 	  font-size: 1.05rem;
 	  color:var(--green);
 	  transition: 0.2s;
-	  font-weight: 600;
-	  
+	  font-weight: 600;      
+    position: relative;     
   }
+
+  .accordionTitle::before{
+    position: absolute;    
+    content: counter(counter) ". ";
+    left: 0;
+    color: var(--deepsafran);
+  }
+
   .accordionContent {
 	padding: 24px 16px 16px;
     background: beige;
