@@ -237,6 +237,12 @@ ul.pageName li a {
   outline: none !important;
 }
 
+.navbar-toggler:focus {
+  text-decoration: none;
+  outline: 0;
+  box-shadow: none;
+}
+
 .navbar-toggler:active,
 .navbar-toggler:focus {
   outline: none;
