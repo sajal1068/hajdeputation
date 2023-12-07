@@ -1208,7 +1208,7 @@ ul.footerLogo li:nth-child(1) {
     width: calc(100% - 138px);
     font-size: 120%!important;
   }
-  .blink-soft {  
+  .InfoMessage .blink-soft {  
     display: block;
     width: 130px;    
   }
@@ -1333,7 +1333,7 @@ ul.footerLogo li:nth-child(1) {
     width: calc(100% - 132px);
     font-size: 120%!important;
   }
-  .blink-soft {  
+  .InfoMessage .blink-soft {  
     display: block;
     width: 130px;    
   }
