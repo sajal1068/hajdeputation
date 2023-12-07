@@ -39,6 +39,7 @@
   --bs-navbar-active-color: #f1f1f1;
   --navtextcolor: #f1f1f1;
   --deepsafran: #ff9933;
+  --gray: #555555;
 
 
 
@@ -161,6 +162,16 @@ ul.logosection {
   min-height: 100px;
   padding: 25px 0;
   background: var(--lightcream);
+}
+ul.InfoMessage li li span.title{
+  display: inline-block;
+  width: 141px;
+}
+ul.InfoMessage li li{
+  padding: 2px 0;
+}
+ul.InfoMessage li li:nth-child(1){   
+  border-bottom: solid 1px var(--deepsafran);
 }
 
 main {
@@ -295,7 +306,7 @@ ul.pageName li a {
 }
 
 .login label {
-  color: #101010;
+  color: var(--gray);
   font-weight: 600;
   margin-bottom: 9px;
 }
@@ -363,11 +374,11 @@ ul.pageName li a {
 }
 
 .registrationForm label {
-  color: #101010;
+  color: var(--gray);
   margin-bottom: 5px;
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   letter-spacing: 0.5px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .the-fieldset {
@@ -528,16 +539,17 @@ ul.listStyle li::after {
 
 .arrows {
   position: absolute;
-  width: 16px;
+  width: 20px;
   height: 31px;
   background-color: #ffcb00;
   top: 45%;
   left: -16px;
   border-radius: 2px;
   display: flex;
-  align-content: center;
+  justify-content: center;
   align-items: center;
   cursor: pointer;
+  padding: 3px;
 }
 
 .contact_info_sec.moveclass{
@@ -603,9 +615,9 @@ ul.InfoMessage li:nth-child(1) span.subheading {
   font-weight: 600 !important;
   display: inline-block;
   padding-left: 5px;
-  ;
+  color: var(--deepsafran);
   font-size: 1.5rem;
-  animation: blinker 1.5s linear infinite;
+  animation: blinker 1s linear infinite;
 }
 
 @keyframes blinker {
@@ -1180,6 +1192,20 @@ ul.footerLogo li:nth-child(1) {
   ul.applicationCountBox li:nth-child(1) ,ul.applicationCountBox li:nth-child(2),ul.applicationCountBox li:nth-child(3){
     margin-bottom: 55px;
   }
+  .InfoMessage li:nth-child(1){
+    display: flex;
+    align-items: center;
+    border-bottom: solid 1px var(--deepsafran);
+  }
+  .InfoMessage li:nth-child(1) .subheading{
+    display: block;
+    width: calc(100% - 138px);
+    font-size: 120%!important;
+  }
+  .blink-soft {  
+    display: block;
+    width: 130px;    
+  }
 
 
 }
@@ -1289,6 +1315,21 @@ ul.footerLogo li:nth-child(1) {
   }
   .navbar-brand {
     display: block;
+  }
+  .InfoMessage li:nth-child(1){
+    display: flex;
+    align-items: center;
+    border-bottom: solid 1px var(--deepsafran);
+    padding-bottom: 5px;
+  }
+  .InfoMessage li:nth-child(1) .subheading{
+    display: block;
+    width: calc(100% - 132px);
+    font-size: 120%!important;
+  }
+  .blink-soft {  
+    display: block;
+    width: 130px;    
   }
 }
 
@@ -1531,6 +1572,12 @@ ul.footerLogo li:nth-child(1) {
   ul.applicationCountBox li {
     width: 24%;
   }
+
+ 
+  .lastdate{
+    height: 100px;
+  }
+  
 
 
 }
