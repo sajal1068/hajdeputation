@@ -40,6 +40,7 @@
   --navtextcolor: #f1f1f1;
   --deepsafran: #ff9933;
   --gray: #555555;
+  --black:#132709;
 
 
 
@@ -152,6 +153,9 @@ ul.logosection {
   font-size: 30px;
   font-weight: 600;
   color: var(--green);
+  display: inline-block;
+  text-align: center;
+  line-height: 1.4;
 }
 
 /* header */
@@ -188,12 +192,18 @@ main {
 .navbar-brand:hover{
   color: var(--deepsafran);
 }
-
 .pagetitle {
   width: 100%;
-  box-sizing: border-box;
-  padding: 25px 0;
-  height: 100px;
+  box-sizing: border-box;  
+  height: 4px;
+  background: var(--green);
+  display: flex;
+  align-items: center;
+}
+/* .pagetitle {
+  width: 100%;
+  box-sizing: border-box;  
+  height: 4px;
   background: var(--green);
   display: flex;
   align-items: center;
@@ -225,9 +235,9 @@ ul.pageName li:not(:last-child):after {
 ul.pageName li a {
   color: var(--green);
   color: #ffe5c2;
+} */
 
 
-}
 
 
 .navbar-toggler {
@@ -293,13 +303,56 @@ ul.pageName li a {
 
 
 /* Login Page */
+
+
+.headingUnderline {
+  width: 100%;
+  display: block;
+  text-align: center;
+  color: var(--black);
+  font-size: 32px;
+  padding: 15px 0;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  text-transform: capitalize;
+  position: relative;
+  margin: 10px 0 35px;
+}
+
+.headingUnderline::after {
+  content: '';
+  position: absolute;
+  margin: auto;
+  left:0;
+  right:0;
+  width: 50px;
+  height: 8px;
+  background-color: var(--green);
+  top: calc(100% + 3px);
+  left: 0;
+}
+
+.headingUnderline::before {
+  content: '';
+  position: absolute;
+  margin: auto;
+  left:0;
+  right:0;
+  width: 100px;
+  height: 2px;
+  background-color: var(--deepsafran);
+  top: calc(100% + 6px);
+  left: 0;
+}
+
 .loginSection {
   width: 100%;
   min-height: 100px;
   background-color: #FFFFFF;
   border-radius: 5px;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05);
-  padding: 45px 45px;
+  padding: 14px 45px 45px;
   margin: 45px 0;
   border: solid #f1f1f1 1px;
   border: solid var(--green) 1px;
@@ -1125,16 +1178,6 @@ ul.footerLogo li:nth-child(1) {
   ul.InfoMessage li {
     width: 100%;
   }
-  .pagetitle {
-    height: 35px;
-    padding: 5px 0px;
-  }
-  ul.pageName li {
-    padding: 5px 20px;
-    position: relative;
-    font-size: .99rem;
-  }
-
   .contact_info_sec {
 
     top: 26% !important;
@@ -1161,8 +1204,11 @@ ul.footerLogo li:nth-child(1) {
   }
 
   .navbar-brand {
-    display: block;
-    font-size: 100%;
+    display: flex;
+    font-size: 0.875rem;
+    width: calc(100% - 52px);    
+    flex-wrap: wrap;    
+    white-space: wrap;
   }
   .nav-link {
     color: var(--green);
@@ -1246,20 +1292,7 @@ ul.footerLogo li:nth-child(1) {
     width: 100%;
   }
 
-  .pagetitle {
-    height: 35px;
-    padding: 5px 0px;
-  }
-
- .pagetitle {
-    height: 35px;
-    padding: 5px 0px;
-  }
-  ul.pageName li {
-    padding: 5px 20px;
-    position: relative;
-    font-size: .99rem;
-  }
+  
 
   .contact_info_sec {
     top: 26% !important;
@@ -1321,6 +1354,7 @@ ul.footerLogo li:nth-child(1) {
   }
   .navbar-brand {
     display: block;
+    font-size: 0.9rem;
   }
   .InfoMessage li:nth-child(1){
     display: flex;
@@ -1357,6 +1391,7 @@ ul.footerLogo li:nth-child(1) {
 
   .navbar-brand {
     display: block;
+    font-size: 95%;
   }
 
   ul.applicationCountBox li {
