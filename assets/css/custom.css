@@ -188,6 +188,7 @@ main {
   font-size: 1.2rem;
   font-weight: 600;
   color: var(--deepsafran);
+  white-space: pre-line
 }
 .navbar-brand:hover{
   color: var(--deepsafran);
@@ -1208,7 +1209,7 @@ ul.footerLogo li:nth-child(1) {
     font-size: 0.875rem;
     width: calc(100% - 52px);    
     flex-wrap: wrap;    
-    white-space: wrap;
+    white-space: pre-line
   }
   .nav-link {
     color: var(--green);
@@ -1316,6 +1317,7 @@ ul.footerLogo li:nth-child(1) {
 
   .navbar-brand {
     display: block;
+    white-space: pre-line;
   }
   .nav-link {
     color: var(--green);
@@ -1355,6 +1357,7 @@ ul.footerLogo li:nth-child(1) {
   .navbar-brand {
     display: block;
     font-size: 0.9rem;
+    white-space: wrap;
   }
   .InfoMessage li:nth-child(1){
     display: flex;
@@ -1392,6 +1395,7 @@ ul.footerLogo li:nth-child(1) {
   .navbar-brand {
     display: block;
     font-size: 95%;
+    white-space: wrap;
   }
 
   ul.applicationCountBox li {
